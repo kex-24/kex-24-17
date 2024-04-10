@@ -1,90 +1,84 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
-
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+# Create Your Own Disney Adventure
 
 ## Deadline
-This assignment is due before the next scheduled class.
+This assignment should be completed before the next scheduled lab session.
 
 ## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+For instructions on how to complete and submit assignments, please refer to the [assignments section of the course instructions](https://example.com/course-instructions#assignments).
 
 ## Preparation
 
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
+- Complete all questions in Module 2: [Looking Inside Classes](https://example.com/sections/module2).
+- Access the OLI material:
+  - Via Canvas (see [OLI Torus SE](https://example-canvas.com/courses/41415/external_tools/4247) link in the left menu)
+  - Or directly at [this webpage](https://example.com/module2/material)
 
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+>Note: The OLI material and tasks might slightly differ this year, so it's ok to read ahead if needed.
 
 ## Learning Goals
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+This week's goals are to familiarize yourself with:
+* Designing and implementing Java classes
+* Defining and using instance fields and methods
+* Understanding and applying constructors
+* Manipulating object state with getters and setters
+* Practicing encapsulation and understanding its significance in OOP
+* Applying the `main` method in test classes
+* Exploring the concepts of scope and variable shadowing
 
 ## Troubleshooting Guide
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+For questions or problems:
+1. Check the [posted issues](https://example.com/help/issues) to see if others have similar queries.
+2. If not, create a [New Issue](https://example.com/help/issues/new) with a descriptive title.
+3. Ask a TA during the [weekly lab](https://schedule.com/INDA). Refer to your schedule for the next lab timing.
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+Discussion with peers is encouraged, but do not share your solutions.
 
-## Assignment Details
+## Assignment: Your Disney Adventure
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+### Task 1: Begin Your Adventure
 
-### Task 1: Class Creation
+Create a new Java file named `DisneyCharacter.java` in the `src` folder to house your `DisneyCharacter` class. This class will enable us to create objects representing characters in the Disney universe.
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+Initially, let's script our first Disney adventure in the `main` method:
+- Create a character named "Mickey Mouse"
+- Assign attributes like `int` energy, `int` happiness, and `boolean` isVillain
+- Print out these attributes to ensure everything is set up correctly.
 
-### Task 2: Defining Properties
+### Task 2: Crafting More Characters
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+With a single character created, it's time to explore more of the Disney realm by creating additional characters. However, manual creation quickly becomes tedious and error-prone.
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+To streamline this process, we shift towards using Java's object-oriented features. First, transition from declaring character attributes in the `main` method to establishing them as class fields. This transition is crucial for managing multiple characters efficiently.
 
-### Task 3: Spawning Galaxy Pets
+### Task 3: Embracing Encapsulation
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+Encapsulation is a cornerstone of effective object-oriented programming. Start by setting your character attribute access modifiers to `private`. Introduce *getters* and *setters* for controlled access to these attributes.
 
-### Task 4: Encapsulation with Getters and Setters
+With appropriately defined *getters* and *setters*, our next step is constructing Disney characters more elegantly. Implement a constructor for the `DisneyCharacter` class, enabling the quick creation of rich character objects.
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+### Task 4: Testing your Characters
 
-### Task 5: Constructing with Constructors
+Expand your assembly of characters by utilizing the constructor method. Develop a method, `printCharacterInfo()`, that neatly prints out the character's details. This leverages encapsulation while making code more readable and maintainable.
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+### Task 5: Interaction and Adventures
 
-### Task 6: Display Information
+Disney characters often interact in their adventures. Implement an `interact` method allowing characters to influence each other's attributes, such as energy or happiness. Follow the guidelines for method creation, focusing on parameter passing and method return types.
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+### Task 6: Dive Deeper into Object Oriented Concepts
 
-### Task 7: The Cosmic Challenge
+- Explore the concept of **variable shadowing** by creating problematic code examples similar to the provided ones. Discuss potential fixes and the importance of the `this` keyword in resolving name conflicts within classes.
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+## Checklist 
 
-### Task 8: Understanding Scope and Shadowing
+- Transition from manual attribute definition to class fields for Disney characters.
+- Implement *getters* and *setters* for character fields.
+- Utilize a constructor for efficient character instantiation.
+- Develop a `printCharacterInfo()` method for cleaner information display.
+- Create an `interact` method to depict character interactions.
+- Understand and apply the concept of variable shadowing in classes.
 
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
+## Bugs and Errors
 
-## Final Checklist
-
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
-
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+Should you encounter any inconsistencies or errors, please open a [New Issue](https://example.com/help/issues/new) titled "Task Error: [Brief Error Summary]". Contributions towards improving the exercise will be acknowledged in the acknowledgments section.
